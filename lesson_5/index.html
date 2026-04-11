@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- Ukraine - uk -->
+<!-- Мова не визначена - zxx -->
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="en">
+	<head>
+		<!-- Кодування тексту -->
+		<meta charset="UTF-8">
+		<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Підключення віддалених шрифтів -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,400;1,800&display=swap" rel="stylesheet">
+		
+		<!-- Файл підключення локальних шрифтів -->
+		<link rel="stylesheet" href="css/fonts.css">
+		<!-- Файл обнулення стилів -->
+		<link rel="stylesheet" href="css/reset.css">
+		<!--Підключення основного файлу стилів -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Заголовок сторінки в браузері (вкладці) -->
+		<title>Lesson 5</title>
+	</head>
+	<body>
+		
+		<div class="container">
+			<header id="start" class="header">
+				<div class="header__menu">
+					<h1 class="header__title">СSS - властивості блоків</h1>
+					<ol class="header__menu-list">
+						<li class="header__menu-item"><a href="#padding-id" class="header__menu-link">Внутрішній відступ -  padding</a></li>
+						<li class="header__menu-item"><a href="#margin-id" class="header__menu-link">Зовнішній відступ - margin</a></li>
+						<li class="header__menu-item"><a href="#width" class="header__menu-link">Ширина - width</a></li>
+						<li class="header__menu-item"><a href="#width" class="header__menu-link">Висота - height</a></li>
+						<li class="header__menu-item"><a href="õverflow" class="header__menu-link">Контент за межами блока - overflow</a></li>
+					</ol>
+				</div>
+				
+			</header>
+			<main class="main">
+ <div id="padding-id" class="padding">
+	<h2 class="padding__title sub-title">Padding - його властивості</h2>
+	<div><span class="padding__text inline">Padding - inline element -> 7px
+		
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nisi ab expedita, reiciendis sit quo facere iusto consequatur similique, maxime velit nostrum praesentium, quidem neque rem? Non repudiandae nostrum ab.
+	</span></div>
+	
+	<div><span class="padding__inline-block inline-block">Padding - inline-block element -> 7px
+		
+		Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores impedit quibusdam explicabo a in autem doloremque inventore eos fugit harum consequatur voluptate, maxime dolor. Ea quas explicabo illum nisi eos.
+	</span></div>
+	<div class="padding__block block">Padding - block element -> 7px
+		
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, consectetur et laborum corporis illum natus, esse expedita veritatis debitis eius officiis similique? Ipsum vitae veritatis recusandae fuga totam aliquam hic!
+	</div>
+	<div class="padding__unCote">
+		<h3 >Padding тільки з одного боку</h3>
+	<div class="padding__top">Padding 15px зверху</div>
+	<div class="padding__left">Padding 15px зліва</div>
+	<div class="padding__right">Padding 15px зправа</div>
+	<div class="padding__bottom">Padding 15px знизу</div>
+	</div>
+ </div>
+ <div class="margin-container">
+ <div id="margin-id" class="margin">
+	<h2 class="margin__sub-title">Margin  та його властивості</h2>
+   <div class="margin__block">
+		<div class="margin__block-2">Margin 20px</div>
+		<div class="margin__block-2">Margin-left 20px</div>
+		<div class="margin__block-2">Margin-right 20px</div>
+		<div class="margin__block-2">Margin-top 20px</div>
+		<div class="margin__block-2">Margin-bottom 20px</div>
+			<div class="margin__block-2">Margin-top 70px</div>
+	 </div>
+ </div>
+</div>
+<div  id="overflow" class="overflow">
+	<h3 class="overflow__title">Overflow</h3>
+	<div id="width" class="overflow__auto block-over">
+		<h4>Overflow auto</h4>
+		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error modi facilis similique quas consequatur earum, ea rem nihil ipsam quis eos excepturi! Blanditiis a dolorem ratione? Nulla nostrum quas ea velit ipsam libero nihil, minus dolores, est facilis excepturi assumenda ex necessitatibus dicta error unde maxime accusamus labore suscipit accusantium.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error modi facilis similique quas consequatur earum, ea rem nihil ipsam quis eos excepturi! Blanditiis a dolorem ratione? Nulla nostrum quas ea velit ipsam libero nihil, minus dolores, est facilis excepturi assumenda ex necessitatibus dicta error unde maxime accusamus labore suscipit accusantium.</p>
+
+	</div>
+	<div class="overflow__hidden block-over">
+		 <h4>Overflow hidden</h4>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error modi facilis similique quas consequatur earum, ea rem nihil ipsam quis eos excepturi! Blanditiis a dolorem ratione? Nulla nostrum quas ea velit ipsam libero nihil, minus dolores, est facilis excepturi assumenda ex necessitatibus dicta error unde maxime accusamus labore suscipit accusantium.</p>
+
+		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error modi facilis similique quas consequatur earum, ea rem nihil ipsam quis eos excepturi! Blanditiis a dolorem ratione? Nulla nostrum quas ea velit ipsam libero nihil, minus dolores, est facilis excepturi assumenda ex necessitatibus dicta error unde maxime accusamus labore suscipit accusantium.</p>
+	</div>
+	<div class="overflow__scroll block-over">
+		 <h4>Overflow scroll</h4>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error modi facilis similique quas consequatur earum, ea rem nihil ipsam quis eos excepturi! Blanditiis a dolorem ratione? Nulla nostrum quas ea velit ipsam libero nihil, minus dolores, est facilis excepturi assumenda ex necessitatibus dicta error unde maxime accusamus labore suscipit accusantium.</p>
+
+		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error modi facilis similique quas consequatur earum, ea rem nihil ipsam quis eos excepturi! Blanditiis a dolorem ratione? Nulla nostrum quas ea velit ipsam libero nihil, minus dolores, est facilis excepturi assumenda ex necessitatibus dicta error unde maxime accusamus labore suscipit accusantium.</p>
+	</div>
+	<div class="overflow__visible block-over">
+		<h4>Overflow visible</h4>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error modi facilis similique quas consequatur earum, ea rem nihil ipsam quis eos excepturi! Blanditiis a dolorem ratione? Nulla nostrum quas ea velit ipsam libero nihil, minus dolores, est facilis excepturi assumenda ex necessitatibus dicta error unde maxime accusamus labore suscipit accusantium.</p>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error modi facilis similique quas consequatur earum, ea rem nihil ipsam quis eos excepturi! Blanditiis a dolorem ratione? Nulla nostrum quas ea velit ipsam libero nihil, minus dolores, est facilis excepturi assumenda ex necessitatibus dicta error unde maxime accusamus labore suscipit accusantium.</p>
+	</div>
+	
+
+
+</div>
+ <div  class="block-card">
+	<div class="block-card__conteiner">
+						<div class="card">
+							<h5 class="card__sub-title">New Arrival</h5>
+							<h3 class="card__title">Disover Our New Collection</h3>
+							<p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, aperiam.</p>
+							<button class="card__button">BUY NOW</button>
+						</div>
+			</div>
+</div>
+			</main>
+			<footer class="footer">
+				<a class="link" href="#menu">Певернутися в меню</a>
+				<div class="contacts">
+					
+					<a class="link-contact" href="_blank">Mій LinkedIn<img src="img/OIP.webp" alt="Силка на мій LinkedIn"></a>
+				</div>
+			</footer>
+		</div>
+
+	
+	
+		
+		
+	</body>
+</html>
