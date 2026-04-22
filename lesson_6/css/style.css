@@ -1,0 +1,388 @@
+
+body {
+font-family: "Poppins", sans-serif;
+padding: 30px;
+}
+h1{
+	margin-bottom: 50px;
+
+}
+.block {
+	background-color: #77608d;
+}
+.container-inline-block{
+	padding: 0px;
+}
+.inline {
+	background-color: #7a956b;
+}
+.inline-block {
+	background-color: #794f45;
+}
+.block {
+	border: 10px solid red;
+}
+.link {
+	color: yellow;
+	text-decoration: underline;
+	text-decoration-color: #000;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 3px;
+}
+.block:hover {
+	border-color: transparent;
+} 
+.inline {
+	border: 3px dashed red;
+	line-height: 1.4;
+	padding: 5px;
+} 
+.inline-block {
+	border: 20px solid yellow;
+} 
+.block {
+	 outline: 10px solid red; 
+	 outline-offset: 10px; 
+	 margin-bottom: 100px;
+}
+
+ .link:focus {
+	outline: 1px dashed red;
+	outline-offset: 5px;
+} 
+
+.inline {
+	 outline: 10px solid red; 
+	 margin-bottom: 50px;}
+
+.inline-block {
+	margin-bottom: 30px;
+	/* outline: 10px solid red; */
+}
+
+
+
+.block {
+	 padding: 5px;
+	border-radius: 10px; 
+	 border: 3px solid green;
+	outline: 5px solid red; 
+	 border-radius: 20px 10px 5px 50px; 
+}
+
+
+ .circle {
+	width: 200px;
+	height: 200px;
+	background-color: #7a956b;
+	border-radius: 50%;
+} 
+.circle:hover{
+	box-shadow:15px 15px 15px red;
+}
+.circle:focus{
+	box-shadow:15px 15px 15px rgba(113, 22, 22, 0.445);
+}
+
+
+
+
+ .button {
+	padding: 15px;
+	background-color: #7a956b;
+	border-radius: 15px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin-bottom: 20px;
+	box-shadow: 0 5px 0px 0px #000;
+
+	transition: all 0.3s;
+	position: relative;
+	top: 0;
+}
+
+.button:hover {
+	top: 3px;
+	box-shadow: 0px 2px 0px 0px #000;
+} */
+
+ .inline {
+	box-shadow:
+		inset 0 0 10px 0px rgba(0, 0, 0, 0.8),
+		5px 5px 5px 10px rgba(13, 96, 154, 0.8),
+		15px 15px 15px 15px rgba(17, 33, 2, 0.8);
+} 
+.inline-block {
+	box-shadow:
+		inset 0 0 10px 0px rgba(0, 0, 0, 0.8),
+		5px 5px 5px 10px rgba(13, 96, 154, 0.8),
+		15px 15px 15px 15px rgba(196, 29, 7, 0.8);
+} 
+
+
+
+.block {
+	 opacity: 0.7; 
+}
+
+
+.block-2{
+	height: 100px;
+	width: 800px;
+	margin: 0 auto;
+	border:2px solid orange;
+	box-shadow: inset
+	20px 1px 15px 25px red;
+	padding: 20px;
+	margin-bottom: 30px ;
+}
+.block-2:hover {
+
+	 visibility: hidden; 
+}
+
+.block-2:focus {
+	 display: none; 
+}
+.block:active {
+	 opacity: 0.8; 
+
+}
+
+
+
+.background {
+	padding: 100px;
+  height: 100%;
+	width: 100%;
+	border: 2px solid black;
+	border-radius: 
+	30% 70% 100% 0% / 13% 98% 2% 87%  ;
+	margin-bottom: 200px;
+	
+	background-color: green;
+	background: #0d4d69;
+background: linear-gradient(90deg,rgba(13, 77, 105, 1) 0%, rgba(12, 59, 31, 0.8) 64%, rgba(237, 221, 83, 1) 100%);
+
+	
+.background-1,.background-2, .background-3{
+	height: 200px;
+	width: 85%;
+	margin: 0 auto;
+	border: 10px solid rgb(94, 84, 22);
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+}
+	.background-2{
+		 background-image: url("../img/honey.jpg");
+		  
+	}
+.background-1{
+	
+
+		 background-image: linear-gradient(18deg, rgba(11, 10, 20, 1) 20%, rgba(191, 21, 56, 1) 57%, rgba(20, 17, 10, 1) 100%, rgba(20, 17, 10, 1) 100%);
+		background-position: cover;
+			background-clip: transparent;
+
+	background-size: cover;
+	border: 10px dashed rgba(143, 67, 67, 1);
+	background-clip: padding-box;
+		}
+	
+
+	
+
+
+		.background-3{
+			background: 
+			url("../img/honey.jpg") center / 100px no-repeat,
+		url("../img/building.jpg") 0 0 / 160px no-repeat,
+		linear-gradient(90deg, #ff3f3a 0%, #3a3dff 50%, #f75e05 100%); 
+		}
+
+
+
+/* Стрілки на CSS */
+.arrow{margin-bottom: 20px;}
+ .arrow-left {
+
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-right: 20px solid rgb(242, 111, 4);
+	border-bottom: 10px solid transparent;
+}
+.arrow-right {
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-left: 20px solid rgb(78, 18, 54);
+	border-bottom: 15px solid transparent;
+}
+.arrow-top {
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 200px solid gold;
+	
+	
+}
+.arrow:hover{
+	transition: transform 0.5s ease;
+transform: rotate(180deg);
+}
+.arrow-bottom {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 20px solid rgb(243, 3, 3);
+} 
+
+
+.list {
+}
+.item {
+	margin-bottom: 10px;
+	background: url("../img/list.svg") 0 0 / 30px no-repeat;
+	line-height: 1.5;
+	padding-left: 40px;
+	padding-top: 3px;
+	
+	min-height: 30px;
+}
+/*! Block 'Verstka' */
+.verstka{
+	text-align: center;
+	height: 316px;
+border: 3px solid black;
+width: 1440px;
+margin: 0 auto;
+margin-bottom: 100px;
+background:url('../img/rectangle.png') 0 0/auto auto no-repeat;
+padding-top: 61px;
+}
+.chekout{
+  /* border: 2px solid red; */
+	width: 253px;
+	text-align: center;
+	height: 133px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+.chekout__logo{
+	margin: auto auto;
+	max-width: 80px;
+	max-height: 77px;
+	text-align: center;
+}
+.chekout__title{
+font-family: 'Poppins';
+text-align: center;
+font-size: 48px;
+font-weight: 700;
+padding-bottom:20px;
+margin-bottom: 20px;
+color: #030901;
+}
+.list{
+	display:block;
+	width: 253px;
+	/* border: 3px solid yellow; */
+	margin: 0 auto;
+
+} 
+
+
+.chekout__list {
+	display: inline-block;
+	
+}
+
+.chekout__list-item{
+	display: inline-block;
+} 
+.chekout__list {
+	font-size: 16px;
+}
+
+.chekout__list-item 
+
+.checkout__arrow{
+	font-family: "Poppins";
+	font-weight: 500;
+	font-size: 16px;
+} 
+.chekout__list-item-checkout{
+	font-family: 'Poppins';
+	font-weight: 200;
+}
+
+.main{
+  padding-bottom: 100px;
+	margin-bottom: 100px !important;
+}
+.position{
+	padding: 20px;
+	border: 2px solid grey;
+	max-width: 1440px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.title{
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom: 12px;
+	
+}
+.position p{
+	padding-bottom: 8px;
+}
+.list{
+	width: 100%;
+}
+
+.catalyst{
+	height: 342px;
+	max-width: 1440px;
+	margin: 0 auto;
+	background:url("../img/catalystMenu.png") 0 0/ auto auto no-repeat;
+	background-color: black;
+}
+.catalyst__block-button{
+	text-align: center;
+
+}
+.catalyst__title{
+	padding-bottom: ;
+	text-align: center;
+	padding-top: 94px;
+	margin-bottom: 17px;
+	font-size: 64px;
+	font-weight: 900;
+	color: white} 
+
+
+.catalyst__button {
+	text-align: center;
+	display: inline-block;
+	margin: 0 auto;
+	width: 265px;
+	height: 50px;
+	background-color: #0A84FF;
+	border-radius: 10px;
+	color: white;
+	font-size: 16px;
+	font-weight: 400;
+
+}
+
+
+
+
+
+
+
+
