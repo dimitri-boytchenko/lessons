@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<!-- Ukraine - uk -->
+<!-- Мова не визначена - zxx -->
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="en">
+	<head>
+		<!-- Кодування тексту -->
+		<meta charset="UTF-8">
+		<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Підключення віддалених шрифтів -->
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+		<!-- Файл підключення локальних шрифтів -->
+		<link rel="stylesheet" href="css/fonts.css">
+		<!-- Файл обнулення стилів -->
+		<link rel="stylesheet" href="css/reset.css">
+		<!--Підключення основного файлу стилів -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Заголовок сторінки в браузері (вкладці) -->
+		<title>Lesson 7</title>
+	</head>
+	<body>
+		<header class="header">
+			<h1 class="header_title">
+				CSS Pseudo-classes and Pseudo-elements
+			</h1>
+			<div class="menu">
+				<ul class="menu_list">
+					<li class="menu_list-element"><a href="#hover" class="menu_list-element-link hover">:hover</a></li>
+					<li class="menu_list-element"><a href="#active" class="menu_list-element-link">:active</a></li>
+					<li class="menu_list-element"><a href="#visited" class="menu_list-element-link">:visited</a></li>
+					<li class="menu_list-element"><a href="#:focus" class="menu_list-element-link">:focus, :focus-visible</a></li>
+					<li class="menu_list-element"><a href="#target" class="menu_list-element-link">:target</a></li>
+					<li class="menu_list-element"><a href="#first-child" class="menu_list-element-link">:first-child, :first-of-type</a></li>
+						<li class="menu_list-element"><a href="#last-child" class="menu_list-element-link">:last-child, :last-of-type</a></li>
+					<li class="menu_list-element"><a href="#nth-child" class="menu_list-element-link">:nth-child, :nth-of-type()</a></li>
+					<li class="menu_list-element"><a href="#not" class="menu_list-element-link">:not</a></li>
+					<li class="menu_list-element"><a href="#has" class="menu_list-element-link">:has</a></li>
+					<li class="menu_list-element"><a href="#before" class="menu_list-element-link">::before, ::after</a></li>
+					<li class="menu_list-element"><a href="#game" class="menu_list-element-link">Game"Stay on Track</a></li>
+					<li class="menu_list-element"><a href="#template1" class="menu_list-element-link">Template №1</a></li>
+					<li class="menu_list-element"><a href="#template2" class="menu_list-element-link">Template №2</a></li>
+					<li class="menu_list-element"><a href="#template3" class="menu_list-element-link">Template №3</a></li>
+								</ul>
+			</div>
+		</header>
+<main class="main">
+ 
+	<div id="hover" class="hover" >
+		<h2 class="sub_title"> :hover</h2>
+		<ul class="hover_list">
+			<li class="hover_element list"><a href="#" class="hover_link link">:hover 1</a></li>
+			<li class="hover_element list"><a href="#" class="hover_link link">:hover 2</a></li>
+			<li class="hover_element list"><a href="#" class="hover_link link">Hover 3</a></li>
+			<li class="hover_element list"><a href="#" class="hover_link link">Hover 4</a></li>
+			<li class="hover_element list"><a href="#" class="hover_link link">Hover 5</a></li>
+			<li class="hover_element list"><a href="#" class="hover_link link">Hover 6</a></li>
+			<li class="hover_element list"><a href="#" class="hover_link link">Hover 7</a></li>
+			<li class="hover_element list"><a href="#" class="hover_link link">Hover 8</a></li>
+			<li class="hover_element list"><a href="#" class="hover_link link">Hover 9</a></li>
+			<li class="hover_element list"><a href="#" class="hover_link link">Hover 10</a></li>
+		</ul>
+	</div>
+	<div id="active" class="active">
+		<h2 class="sub_title"> :active</h2>
+     <ul class="active_list">
+			<li class="active_element list"><a href="#" class="active_link link">TikTok</a></li>
+			<li class="active_element list"><a href="#" class="active_link link">Vinted</a></li>
+			<li class="active_element list"><a href="#" class="active_link link">Leboncoin</a></li>
+			<li class="active_element list"><a href="#" class="active_link link">Automobile</a></li>
+			<li class="active_element list"><a href="#" class="active_link link">FLS</a></li>
+		 </ul>
+	</div>
+	<div id="visited" class="visited">
+		<h2 class="sub_title"> :visited</h2>
+<ul class="visited_list">
+	<li class="visited_element list"><a href="#" class="visited_link link">LinkedIn</a></li>
+	<li class="visited_element list"><a href="#" class="visited_link link">Instagram</a></li>
+	<li class="visited_element list"><a href="#" class="visited_link link">Facebook</a></li>
+	<li  class="visited_element list"><a href="#" class="visited_link link">Google</a></li>
+	<li class="visited_element list"><a href="#" class="visited_link link">FLS</a></li>
+</ul>
+	</div>
+	<div id="focus" class="focus">
+		<h2 class="sub_title"> :focus</h2>
+<ul class="focus_list">
+	<li class="focus_element list"><a href="#" class="focus_link link">LinkedIn</a></li>
+	<li class="focus_element list"><a href="#" class="focus_link link">Instagram</a></li>
+	<li class="focus_element list"><a href="#" class="focus_link link">Facebook</a></li>
+	<li class="focus_element list"><a href="#" class="focus_link link">Google</a></li>
+	<li class="focus_element list"><a href="#" class="focus_link link">FLS</a></li>
+</ul>
+	</div>
+	<div id="target" class="target">
+		<h2 class="sub_title"> :target</h2>
+		<ul class="target_list">
+			<li class="target_element list"><a href="#hover" class="target_link link">Jump to :hover</a></li>
+			<li class="target_element list"><a href="#active" class="target_link  link">Jump to :active</a></li>
+			<li class="target_element list"><a href="#visited" class="target_link link">Jump to :visited</a></li>
+			<li class="target_element list"><a href="#focus" class="target_link link">Jump to :focus, :focus-visible</a></li>
+		
+		</ul>
+	</div>
+	<div id="first-child">	
+		<h2 class="sub_title"> :first-child</h2>
+		<div class="first-child">
+		
+			<div class="first-block">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aut sunt natus sed tempore ratione quod earum dolore? Culpa, quaerat!</p>
+				<p>Obcaecati quo reiciendis culpa incidunt! Ea culpa beatae voluptas, doloremque quia impedit eaque ex quod facilis saepe sed fuga soluta!</p>
+				<p>Reprehenderit, ratione. Voluptates necessitatibus, quos ullam quas ex officia esse voluptatum molestias tempora laborum pariatur corrupti? Est repudiandae error sit?</p>
+				<p>Quidem consequatur doloribus error quibusdam neque, ipsam, praesentium nisi perferendis sapiente accusantium sunt rem iusto similique aliquam placeat corporis incidunt!</p>
+		</div>
+			</div>
+		<div class="first-of-type">
+			<h2 class="sub_title"> :first-of-type</h2>
+			<div class="first-block">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aut sunt natus sed tempore ratione quod earum dolore? Culpa, quaerat!</p>
+				<p>Obcaecati quo reiciendis culpa incidunt! Ea culpa beatae voluptas, doloremque quia impedit eaque ex quod facilis saepe sed fuga soluta!</p>
+				<p>Reprehenderit, ratione. Voluptates necessitatibus, quos ullam quas ex officia esse voluptatum molestias tempora laborum pariatur corrupti? Est repudiandae error sit?</p>
+				<p>Quidem consequatur doloribus error quibusdam neque, ipsam, praesentium nisi perferendis sapiente accusantium sunt rem iusto similique aliquam placeat corporis incidunt!</p>
+		</div>
+		</div>
+	</div>
+	<div id="last-child">
+		<div class="last-child">
+			<h2 class="sub_title"> :last-child</h2>
+	
+		
+			<div class="last-block">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aut sunt natus sed tempore ratione quod earum dolore? Culpa, quaerat!</p>
+				<p>Obcaecati quo reiciendis culpa incidunt! Ea culpa beatae voluptas, doloremque quia impedit eaque ex quod facilis saepe sed fuga soluta!</p>
+				<p>Reprehenderit, ratione. Voluptates necessitatibus, quos ullam quas ex officia esse voluptatum molestias tempora laborum pariatur corrupti? Est repudiandae error sit?</p>
+				<p>Quidem consequatur doloribus error quibusdam neque, ipsam, praesentium nisi perferendis sapiente accusantium sunt rem iusto similique aliquam placeat corporis incidunt!</p>
+	
+		</div>
+		<div class="last-of-type">
+			<h2 class="sub_title"> :last-of-type</h2>
+			<div class="last-block-type">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aut sunt natus sed tempore ratione quod earum dolore? Culpa, quaerat!</p>
+				<p>Obcaecati quo reiciendis culpa incidunt! Ea culpa beatae voluptas, doloremque quia impedit eaque ex quod facilis saepe sed fuga soluta!</p>
+				<p>Reprehenderit, ratione. Voluptates necessitatibus, quos ullam quas ex officia esse voluptatum molestias tempora laborum pariatur corrupti? Est repudiandae error sit?</p>
+				<p>Quidem consequatur doloribus error quibusdam neque, ipsam, praesentium nisi perferendis sapiente accusantium sunt rem iusto similique aliquam placeat corporis incidunt!</p>
+	
+		</div>
+		</div>
+	</div>
+	<div id="nth-child" class="nth_child">
+		<h2 class="sub_title">:nth-child, :nth-of-type ()</h2>
+		
+		<ul class="nth_child-list">
+			<li class="nth-child_element list">
+				<p>	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo iure repudiandae pariatur odio magnam? Atque!</p>
+			</li>
+			<li class="nth-child_element list">
+				<p>	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo iure repudiandae pariatur odio magnam? Atque!</p>
+			</li>
+			<li class="nth-child_element list">
+				<p>	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo iure repudiandae pariatur odio magnam? Atque!</p>
+			</li>
+			<li class="nth-child_element list">
+				<p>	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo iure repudiandae pariatur odio magnam? Atque!</p>
+			</li>
+			<li class="nth-child_element list">
+				<p>	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo iure repudiandae pariatur odio magnam? Atque!</p>
+			</li>
+			<li class="nth-child_element list">
+				<p>	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo iure repudiandae pariatur odio magnam? Atque!</p>
+			</li>
+			<li class="nth-child_element list">
+				<p>	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo iure repudiandae pariatur odio magnam? Atque!</p>
+			</li>
+			<li class="nth-child_element list">
+				<p>	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo iure repudiandae pariatur odio magnam? Atque!</p>
+			</li>
+			<li class="nth-child_element list">
+				<p>	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo iure repudiandae pariatur odio magnam? Atque!</p>
+			</li>
+			<li class="nth-child_element list">
+				<p>	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo iure repudiandae pariatur odio magnam? Atque!</p>
+			</li>
+			<li class="nth-child_element list">
+				<p>	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo iure repudiandae pariatur odio magnam? Atque!</p>
+			</li>
+			<li class="nth-child_element list">
+				<p>	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo iure repudiandae pariatur odio magnam? Atque!</p>
+			</li>
+			<li class="nth-child_element list">
+				<p>	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo iure repudiandae pariatur odio magnam? Atque!</p>
+			</li>
+			<liv>
+				<p>	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo iure repudiandae pariatur odio magnam? Atque!</p>
+			</liv>
+			<li class="nth-child_element list">
+				<p>	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo iure repudiandae pariatur odio magnam? Atque!</p>
+			</li>
+			<li class="nth-child_element list">
+				<p>	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo iure repudiandae pariatur odio magnam? Atque!</p>
+			</li>
+			<li class="nth-child_element list">
+				<p>	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo iure repudiandae pariatur odio magnam? Atque!</p>
+			</li>
+			<li class="nth-child_element list">
+				<p>	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo iure repudiandae pariatur odio magnam? Atque!</p>
+			</li>
+			<li class="nth-child_element list">
+				<p>	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo iure repudiandae pariatur odio magnam? Atque!</p>
+			</li>
+			<li class="nth-child_element list">
+				<p>	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo iure repudiandae pariatur odio magnam? Atque!</p>
+			</li>
+		</ul>
+		
+	</div>
+	<div id="not" class="not">
+			<h2 class="sub_title">:not</h2>
+		<p class="has_paragraph">Lorem ipsum dolor sit amet.</p>
+		<p class="has_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ut recusandae fugiat beatae veniam velit laborum, harum nulla omnis accusantium.</p>
+		<p class="has_paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta optio nisi impedit explicabo earum id harum inventore maiores nostrum voluptatum.</p>
+		<p class="has_paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum fugit iste rem dolore voluptatum officiis quia similique dolorem nulla eius.</p>
+	</div>
+	<div id="has" class="has">
+			<h2 class="sub_title ">:has</h2>
+			<p class="adipis"><span class="has_span">Lorem ipsum dolor sit amet.</span></p>
+		
+		<p class="has_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ut recusandae fugiat beatae veniam velit laborum, harum nulla omnis accusantium.</p>
+		<p class="has_paragraph">Lorem ipsum, dolor sit amet consectetur 
+			<span class="has_laborum">Laborum</span>
+			<mark>adipisicing</mark>  elit. Dicta optio nisi impedit explicabo earum id harum inventore maiores nostrum voluptatum.</p>
+		<p class="has_paragraph">Lorem ipsum dolor sit amet consectetur,
+			<span class="adipis"> adipisicing elit</span>. Laborum fugit iste rem dolore voluptatum officiis quia similique dolorem nulla eius.</p>
+	</div>
+	<div id="before" class="before">
+		<h2 class="sub_title sub_title-before-after">::before et ::after</h2>
+		<ul>
+			<li >
+			
+				<p>Lorem ipsum dolor sit amet.</p>
+			</li>
+			<li>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</li>
+			<li>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</li>
+			<li>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</li>
+			<li>
+				<p>Lorem
+					<span> ipsum dolor</span> sit amet.</p>
+			</li>
+			<li>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</li>
+		
+		</ul>
+	</div>
+	<h2 class="sub_title game-title">Game "Stay on Track</h2>
+	<div id="game" class="game">
+										<div class="b1 b game-block"></div>
+										<div class="b2 b game-block"></div>
+                      <div class="b3 b game-block"></div>
+											<div class="b4 b game-block"></div>
+											<div class="b5 b game-block"></div>
+											<div class="b6 b game-block"></div>
+	
+	</div>
+	</div>
+	<div class="makets">
+	<div class="maket1">
+		<div class="maket1-b1 maket1-b-modificateur">
+<div class="maket1-left">
+		  <span class="numero">01</span>
+		</div>
+		<div class="maket1-right">
+			<h6>Jan 2026</h6>
+			<h2 class="maket-right-subtitle">Research & discovery</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ipsa.</p>
+		</div>
+		</div>
+		<div class="maket1-b2 maket1-b-modificateur">
+			<div class="maket1-left">
+		  <span class="numero">02</span>
+		</div>
+		<div class="maket1-right">
+			<h6>Fev 2026</h6>
+			<h2 class="maket-right-subtitle">Product development</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ipsa.</p>
+		</div>
+		</div>
+		<div class="maket1-b3 maket1-b-modificateur">
+			<div class="maket1-left">
+		  <span class="numero">03</span>
+		</div>
+		<div class="maket1-right">
+			<h6>Apr 2026</h6>
+			<h2 class="maket-right-subtitle">Product launch</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ipsa.</p>
+		</div>
+		</div>
+		
+	</div>
+	<div class="maket2"></div>
+	<div class="maket3"></div>
+</div>
+<div class="block_nature">
+<div class="grown">
+	<h3 class="grown_title">Grown <span>by Nature</span></h3>
+	<p class="grown_text">
+		We grow our crops naturally. We are a fast-growing agricultural technology company passionate about ensuring food security. We leverage our technology to improve productivity & sales to promote food security for you and your family.
+	</p>
+	<button class="grown_button">
+		Learn more 
+	</button>
+</div>
+</div>
+</main>
+<footer>
+<p>&copy; 2026 Dimitri Boytchenko</p>
+
+</footer>
+	</body>
+</html>
