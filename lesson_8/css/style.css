@@ -1,0 +1,42 @@
+/* @import url("reset.css"); */
+
+/* Локальне підключення шрифтів */
+/* @import url("fonts.css"); */
+
+/* Підключення віддалених шрифтів */
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap"); */
+
+/* Значення за замовченням  */
+body {
+	/* font-family: "InterDisplay"; */
+	font-family: "Poppins", sans-serif;
+
+	padding: 30px;
+	/* background-color: #333; */
+	
+}
+/* ======================================================== */
+
+.image-x1,
+.image-x2,
+.image-x3 {
+	width: 200px;
+}
+header ul li>img{
+	position: relative;
+	top: -10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+}
+.discover-home_description{
+	padding: 15px;
+}
+footer{
+	height: 100px;
+	text-align: center;
+ font-weight: 900;
+ font-size: 24px;
+	background-color: rgb(7, 107, 107);
+	line-height: 100px;
+	
+}
