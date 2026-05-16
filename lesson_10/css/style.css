@@ -1,0 +1,209 @@
+
+body {
+font-family: "Poppins", sans-serif;
+background-color: #333;
+color: #fff;
+}
+/* ------------------------------------------------------------------- */
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+/* ------------------------------------------------------------------- */
+[class*="__container"] {
+	max-width: 800px;
+	margin: 0 auto;
+}
+/* ------------------------------------------------------------------- */
+.header{
+	position: sticky;
+	top: 0;
+	background-color: #74985a;
+	
+  z-index: 150;
+}
+.menu__item{
+	position: relative;
+	padding: 10px 10px;
+	display: inline-block;
+
+	font-size: 18px;
+	
+	color: black;
+	font-weight: 600;
+	margin-left: 40px;
+	}
+	.menu__item:not(:last-child){
+		margin-right: 15px;
+	}
+	.menu__item:hover .menu__link{
+		text-decoration: underline;
+
+	}
+	.menu__item:hover .submenu{
+		opacity: 1;
+		visibility: visible;
+		translate: 0 0px;
+		pointer-events: all;
+}
+	.
+	.menu__link{
+		font-size: 20px;
+		padding: 20px 0;
+	}
+	.menu__link:hover{
+		text-decoration: underline;
+	}
+	.menu__submenu{
+		position: absolute;
+		left: 0;
+		top: 100%;
+		width: 200px;
+		background: purple;
+		padding: 20px;
+		border: 2px solid black;
+		border-radius: 10px;
+		box-shadow: 5px 5px 5px black;
+		z-index: 100;
+	
+	} 
+	.submenu__item:not(:last-child){
+		margin-bottom: 10px;
+		font-size: 18px;
+	}
+	.submenu__link:hover{
+		text-decoration: underline;
+	}
+	.submenu {
+		opacity: 0;
+		visibility: hidden;
+		translate: 10px 15px;
+		transition: all 0.5s;
+		pointer-events: none;
+		
+	}
+	.deusieme-submenu{
+		position: absolute;
+		left: calc(100% - 2px);
+	top:0;
+		width: 200px;
+		background: purple;
+		/* padding: 20px; */
+		border: 2px solid black;
+		border-radius: 10px;
+		box-shadow: 5px 5px 5px black;
+		opacity: 0;
+		visibility: hidden;
+		/* translate: 10px 15px; */
+		transition: all 0.5s;
+		pointer-events: none;
+} 
+
+.submenu__item:hover>.deusieme-submenu {
+	opacity: 1;
+	visibility: visible;
+	/* translate: 10px 15px; */
+	pointer-events: all;
+}
+	.deusieme-submenu__link{
+		font-size: 20px;
+		padding: 10px 0;
+	}
+
+	.deusieme-submenu__link:hover{
+		text-decoration: underline;
+	  text-decoration-color: aqua;
+	}
+	
+	.submenu__item {
+		position: relative;
+		
+	}
+	
+	.submenu__link,
+	.deusieme-submenu__link {
+		display: block;
+		padding: 10px;
+		
+	} 
+	.page__container{
+		position: relative;
+	} 
+	.blocks__item{
+		position: sticky;
+	
+	background-color: #333;
+	padding: 10px;
+	z-index: 10;
+	}
+	.blocks__item--brown{
+		background-color: rgb(122, 234, 10);
+		top: 38px;
+	
+	z-index: 90;
+	} 
+	
+	
+
+.blocks__item--puprule 
+{
+		background-color: rgb(185, 4, 205);
+		top: 70px;
+	
+	z-index: 90;
+	} 
+	
+	.blocks__item--green{
+		background-color: green;
+		top: 105px;
+	
+	z-index: 70;
+	} 
+	.separation{
+		padding: 50px;
+	
+		margin-bottom: 20px;
+	}
+	.homework__title{
+		width: 800px;
+		margin: 0 auto;
+		font-size: 34px;	
+		color: black;
+		text-align: center;
+		line-height: 1.5;
+		background-color: #ccc;
+		padding: 20px 0;
+		margin-bottom: 20px;
+	}
+	.homework{
+		width: 800px;
+		margin: 0 auto;
+		background: #1a1a1a;
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+	}
+.homework__text{
+	line-height: 1.5;
+
+}
+.homework__text::before{
+	position: relative;
+	top: 3px;
+	content: url("../img/etoileBleue.svg");
+
+padding: 0 15px;
+}
+
+footer{
+	height: 100px;
+	text-align: center;
+ font-weight: 900;
+ font-size: 24px;
+	background-color: rgb(7, 107, 107);
+	line-height: 100px;
+	
+}
+
+	
+
+	
