@@ -1,0 +1,374 @@
+
+.wrapper{
+	width: 1200px;
+	margin: 0 auto;
+}
+.header{
+	height: 80px;
+	background-color: #9ee407c6;
+	text-align: center;
+	font-size: 44px;
+
+}
+.header__title{
+
+	padding: 20px;
+}
+body{
+	background-color: burlywood;
+}
+main{
+	margin-bottom: 50px;
+	padding-bottom: 30px;
+}
+footer{
+	height: 100px;
+	text-align: center;
+ font-weight: 900;
+ font-size: 24px;
+	background-color: rgb(7, 107, 107);
+line-height: 100px;
+	color: #000;
+	
+}
+
+.page {
+margin: 0 auto;
+}
+.cards{
+  display: inline-block;
+	vertical-align: top;
+	margin-left: 23px;
+	margin-bottom: 20px;
+	transition: all 1.2s ease;}
+	.cards p{
+		font-size: 20px;
+		padding: 5px;
+	}
+.cards__object {
+	transition: all 2.5s ease;
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  background-color: #fff;
+  margin-right: 20px;
+  vertical-align: top;
+  font-size: 56px;
+	text-align: center;
+	padding-top: 30%;
+	border-radius: 15px;
+	vertical-align: top;
+  background-color: #aa620bc2;
+	box-shadow: inset 5px 5px 25px black;
+}
+	.perspective h2{
+		margin-bottom: 20px;
+		font-size: 34px;
+		text-decoration: underline;
+		color: rgb(15, 62, 15);
+	 text-shadow: 5px 5px 5px purple;
+	 padding: 25px;
+	}
+
+.cards--a:hover {
+	translate:30px;
+}
+.cards--b:hover {
+	translate:30px 30px;
+}
+.cards--c:hover {
+	rotate: 45deg;
+}
+.cards--d:hover {
+	transform: rotateX(90deg);
+}
+.cards--e:hover {
+	transform: rotateY(90deg);
+
+}
+.cards--f:hover {
+	transform: scale(1.3);
+}
+.cards--g:hover {
+	transform: scale(3);
+}
+.cards--h:hover {
+	transform: scale(1.2);
+}
+.cards--i:hover {
+	transform: skew(70deg, 50deg);
+}
+.cards--j:hover {
+	transform: skewX(60deg);
+}
+.cards--k:hover {
+	transform: skewY(60deg);
+}
+.cards--l:hover {
+	transform: matrix(-0.25, 1.60, -1.25, -0.50, -45, -45);
+}
+.cards--m:hover {
+	transform: translate3d(-40px,-30px,100px);
+}
+.cards--n:hover {
+	transform: rotate3d(4,3,3,180deg);
+}
+.cards--o:hover {
+	transform: scale3d(3,2,3);
+}
+.cards--p:hover {transform: rotateY(270deg);
+}
+.cards--q:hover {transform: rotateX(270deg);
+}
+.cards--r:hover {
+	transform: 
+	translate3d(-270px,-180px,300px)
+	scale(1.2)
+	rotate3d(-10,17,3,270deg);
+}
+.page__title{
+	font-size: 34px;
+	padding: 20px;
+	text-shadow: 5px 5px 5px blueviolet;
+}
+
+.homework__container{
+	position: relative;
+
+	width: 1200px;
+	height: 500px;
+
+	margin: 50px auto;
+
+	background-image: url("../img/plages-de-la-reunion.avif");
+	background-size: cover;
+	background-position: center;
+
+	border-radius: 20px;
+
+	overflow: hidden;
+}
+// Korablick
+
+.homework{
+	position: relative;
+
+	width: 1200px;
+	height: 500px;
+
+	margin: 50px auto;
+
+	background-image: url("../img/plages-de-la-reunion.avif");
+	background-size: cover;
+	background-position: center;
+
+	border-radius: 20px;
+
+	overflow: hidden;
+}
+
+/* -------------------------------- */
+
+.boat{
+	position: absolute;
+
+	left: 120px;
+	bottom: 30px;
+
+	width: 220px;
+	height: 170px;
+	transition: all 4s ease;
+}
+
+/* -------------------------------- */
+
+.boat__mast{
+	position: absolute;
+
+	left: 95px;
+	top: 10px;
+
+	width: 5px;
+	height: 110px;
+
+	background-color: #4b2a13;
+}
+
+/* -------------------------------- */
+
+.boat__flag{
+	position: absolute;
+
+	left: 100px;
+	top: 10px;
+
+	width: 35px;
+	height: 20px;
+
+	background-color: crimson;
+
+	clip-path: polygon(0 0,100% 50%,0 100%);
+}
+.boat:hover .boat__flag{
+	transition: 0.1s;
+	transform: translateX(-35px) rotateY(180deg);
+}
+/* -------------------------------- */
+
+.boat__sail{
+	position: absolute;
+
+	width: 0;
+	height: 0;
+}
+
+/* grande voile */
+
+.boat__sail--left{
+	left: 25px;
+	top: 25px;
+
+	border-bottom: 75px solid white;
+	border-left: 65px solid transparent;
+}
+
+/* petite voile */
+.boat:hover .boat__sail--left{
+	transition: 1s;
+	transform: translateX(75px) rotateY(180deg);
+	border-bottom-right-radius: 50%;
+}
+
+.boat__sail--right{
+	left: 100px;
+	top: 38px;
+
+	border-bottom: 60px solid #ececec;
+	border-right: 50px solid transparent;
+}
+
+/* -------------------------------- */
+
+.boat__body{
+	position: absolute;
+
+	left: 0;
+	bottom: 18px;
+
+	width: 170px;
+	height: 38px;
+
+	background:
+	linear-gradient(to bottom,#b13a1c,#6f1f0f);
+
+	border-radius: 0 0 90px 90px;
+
+	text-align: center;
+
+	box-shadow:
+	0 6px 12px rgba(0,0,0,0.25);
+}
+
+/* -------------------------------- */
+
+.boat__body span{
+	display: inline-block;
+
+	width: 14px;
+	height: 14px;
+
+	margin: 10px 6px;
+
+	background-color: #7ddcff;
+
+	border: 2px solid #3b1d0f;
+
+	border-radius: 50%;
+}
+
+/* -------------------------------- */
+
+.boat__wave{
+	position: absolute;
+
+	left: -5px;
+	bottom: 8px;
+
+	width: 185px;
+	height: 12px;
+
+	background-color: rgba(30,144,255,0.6);
+
+	border-radius: 50%;
+}
+.boat:hover .boat__wave{
+	background-color: rgba(147, 169, 192, 0.6);
+}
+
+/* -------------------------------- */
+.boat:hover{
+
+	
+	transition: all 2s;
+	animation: move-right 5s forwards;
+	transform:scale(2) rotate(-5deg) translateY(-8px);
+}
+
+.homework__container:hover .boat{
+
+	
+	transition: all 2s;
+	animation: move-right 5s forwards;
+	transform: rotate(-5deg) translateY(-8px);
+}
+@keyframes move-right{
+
+	0%{
+		scale: 1.2;
+		left:120px;
+		bottom:30px;
+    transition:all 5s;
+		transform: rotate(-5deg);
+	}
+
+	50%{
+		scale: 1.2;
+		left:830px;
+		bottom:50px;
+    transform: 10s;
+		transform: rotate(-15deg) translateY(-8px);
+	}
+	55%{
+		
+		transform: rotateY(180deg);
+	}
+	100%{
+		scale: 1.2;
+		left:120px;
+		bottom:30px;
+    transition: all 10s;
+		transform: rotateY(180deg);
+		
+	}
+	
+}
+.boat__motor{
+	position: absolute;
+
+	left: -15px;
+	bottom: 30px;
+
+	width: 24px;
+	height: 24px;
+
+	background-color: #0b3d50;
+
+	border: 2px solid #3b1d0f;
+
+	border-radius: 3px;
+}
+.homework__container:hover .boat__motor{
+	transition:all 2s ease;
+	background-color: #d24508;
+	box-shadow: 5px 5px 10px yellow;
+}
